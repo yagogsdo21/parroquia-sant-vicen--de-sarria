@@ -7,7 +7,7 @@ Per editar textos: modifica pages.py (subpàgines) o home_main.html (portada) i 
 import os, re
 from pages import PAGES, NEWSLETTER
 
-OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "site")
+OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "docs")
 LOGO = "https://www.parroquiasarria.net/wp-content/uploads/2016/09/logo-parroquia-v.png"
 FAVICON = "https://www.parroquiasarria.net/wp-content/uploads/2016/07/cropped-STVICENÇ_favicon-270x270.png"
 SITE = "Parròquia de Sant Vicenç de Sarrià"
