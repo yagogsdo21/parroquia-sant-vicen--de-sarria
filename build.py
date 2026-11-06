@@ -90,9 +90,9 @@ def header(current, section):
     return f"""<div class="topbar">
   <div class="wrap">
     <div class="contact-mini">
-        <span>TEL. 932 030 907</span>
-<span>santvicenc181@arqbcn.cat</span>
-</div>
+      <a href="tel:932030907">TEL. 932 030 907</a>
+      <a href="mailto:santvicenc181@arqbcn.cat">santvicenc181@arqbcn.cat</a>
+    </div>
     <form class="search" role="search" action="https://www.google.com/search" method="get">
       <label for="s">Cerca:</label>
       <input id="s" type="search" name="q">
