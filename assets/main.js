@@ -2,6 +2,7 @@
   var burger=document.querySelector('.burger'),nav=document.querySelector('nav.main');
   if(burger&&nav){
     burger.addEventListener('click',function(){
+      nav.style.top=document.querySelector('header.site').getBoundingClientRect().bottom+'px';
       var o=nav.classList.toggle('open');burger.classList.toggle('open',o);burger.setAttribute('aria-expanded',o);
       document.body.style.overflow=o?'hidden':'';
     });
