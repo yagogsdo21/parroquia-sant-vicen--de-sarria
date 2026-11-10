@@ -34,6 +34,11 @@ nav.main .sub{list-style:none;position:absolute;top:100%;left:0;min-width:230px;
 nav.main li:hover>.sub,nav.main li:focus-within>.sub{opacity:1;visibility:visible;transform:none}
 nav.main .sub a{display:block;padding:8px 12px;border-radius:8px;font-size:.88rem;color:var(--muted)}
 nav.main .sub a:hover,nav.main .sub a.active{background:var(--stone);color:var(--wine)}
+nav.main .sub-label{font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);font-weight:600;padding:10px 12px 4px;margin-top:6px;border-top:1px solid var(--line)}
+nav.main .parent-link{display:none}
+.gift-link{display:block;text-decoration:none!important;color:inherit!important;transition:.2s;position:relative}
+.gift-link::after{content:"↗";position:absolute;right:16px;top:18px;color:var(--gold)}
+.gift-link:hover{background:#fff;box-shadow:var(--shadow);transform:translateY(-2px)}
 nav.main .cta>a{background:var(--wine);color:#fff!important;padding:9px 18px;border-radius:999px;margin-left:6px}
 nav.main .cta>a:hover,nav.main .cta>a.active{background:var(--wine-soft)!important}
 .burger{display:none;background:none;border:0;width:44px;height:44px;cursor:pointer;border-radius:10px}
@@ -220,13 +225,17 @@ footer .logo-f img{height:46px}
   .foot-grid{grid-template-columns:1fr 1fr}
   .layout{grid-template-columns:1fr}
   aside.side{grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
+  header.site{backdrop-filter:none;-webkit-backdrop-filter:none;background:var(--paper)}
   .burger{display:block}
-  nav.main{position:fixed;inset:78px 0 0 0;background:var(--paper);overflow:auto;transform:translateX(100%);transition:.3s;padding:16px 20px 40px}
+  nav.main{position:fixed;inset:127px 0 0 0;background:var(--paper);overflow:auto;transform:translateX(100%);transition:.3s;padding:16px 20px 40px}
   nav.main.open{transform:none}
   nav.main>ul{flex-direction:column;align-items:stretch;gap:0}
   nav.main>ul>li>a{padding:14px 6px;border-bottom:1px solid var(--line);border-radius:0;justify-content:space-between}
   nav.main .sub{position:static;opacity:1;visibility:visible;transform:none;box-shadow:none;border:0;padding:4px 0 8px 12px;display:none;min-width:0;background:none}
   nav.main li.open>.sub{display:block}
+  nav.main .parent-link{display:block}
+  nav.main .parent-link a{font-weight:600;color:var(--wine)}
+  nav.main .sub-label{border-top:0;padding-left:12px}
   nav.main li:hover>.sub{display:none}
   nav.main li.open:hover>.sub{display:block}
   nav.main .cta>a{margin:14px 0 0;justify-content:center;border:0}
